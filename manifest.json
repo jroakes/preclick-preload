@@ -1,0 +1,23 @@
+{
+  "name": "PreClick Preload",
+  "version": "1.0",
+  "description": "Preloads pages you are about to click on",
+  
+  "permissions": [
+      "tabs",
+      "cookies",
+      "<all_urls>"
+	],
+	
+  "content_scripts": [
+		{
+		"matches": ["<all_urls>"],
+		"js": ["preclick.js"]
+		}
+	],
+  "icons": {
+    "128": "images/preclick_preload_128.png"
+  },
+  "manifest_version": 2
+  
+}
